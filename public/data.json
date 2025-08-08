@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Doe",
+    "expertise": "MERN Stack Development",
+    "image": "https://i.ibb.co/B5nHvyTP/depositphotos-189668580-stock-photo-young-male-teacher-with-book.webp",
+    "email": "jane.doe@example.com",
+    "courses": ["React", "NodeJS", "ExpressJS", "MongoDB"]
+  },
+  {
+    "id": 2,
+    "name": "John Smith",
+    "expertise": "Artificial Intelligence",
+    "image": "https://i.ibb.co/rRgpxVmH/confident-young-polish-male-teacher-in-classroom-smiling-in-front-of-blackboard-for-education-and-te.jpg",
+    "email": "john.smith@example.com",
+    "courses": ["Python for AI", "Deep Learning Basics"]
+  },
+  {
+    "id": 3,
+    "name": "Sarah Lee",
+    "expertise": "Cybersecurity",
+    "image": "https://i.ibb.co/3YrPxYwR/What-are-the-Different-Types-of-Teacher-Training-Programs.jpg",
+    "email": "sarah.lee@example.com",
+    "courses": ["CyberShield: Foundations", "Ethical Hacking"]
+  },
+  {
+    "id": 4,
+    "name": "Ahmed Khan",
+    "expertise": "Data Science",
+    "image": "https://i.ibb.co/4g5dtyFZ/istockphoto-1160926571-612x612.jpg",
+    "email": "ahmed.khan@example.com",
+    "courses": ["Python for Data Science", "Machine Learning Basics"]
+  },
+  {
+    "id": 5,
+    "name": "Emily Chen",
+    "expertise": "UI/UX Design",
+    "image": "https://i.ibb.co/ymYPf0HH/pngimg-com-teacher-PNG27.png",
+    "email": "emily.chen@example.com",
+    "courses": ["Design Thinking", "Figma Essentials"]
+  }
+]
