@@ -22,6 +22,7 @@ import Privacy from '../pages/FooterInfo/Privacy';
 import Contact from '../pages/FooterInfo/Contact';
 import Instructors from '../pages/Instructors/Instructors';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,6 +46,7 @@ const router = createBrowserRouter([
         path: '/login',
         Component: Login
       },
+     
       {
         path: '/add-course',
         element: <PrivateRoute><AddCourse></AddCourse></PrivateRoute>
