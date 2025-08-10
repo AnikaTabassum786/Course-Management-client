@@ -21,6 +21,7 @@ import Terms from '../pages/FooterInfo/Terms';
 import Privacy from '../pages/FooterInfo/Privacy';
 import Contact from '../pages/FooterInfo/Contact';
 import Instructors from '../pages/Instructors/Instructors';
+import AllCourses from '../pages/AllCourses/AllCourses';
 
 
 const router = createBrowserRouter([
@@ -56,6 +57,11 @@ const router = createBrowserRouter([
         path: '/update-course/:id',
         loader: ({ params }) => fetch(`https://course-management-server-mu.vercel.app/course/${params.id}`),
         Component: EditCourse
+      },
+      {
+        path: '/all-new-courses',
+        loader:()=>fetch('https://course-management-server-mu.vercel.app/all-new-courses'),
+        Component: AllCourses
       },
       {
         path: '/all-courses',

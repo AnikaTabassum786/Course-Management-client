@@ -39,7 +39,9 @@ const Navbar = () => {
       isActive ? "active underline" : ""
     }>Home</NavLink></li>
 
-    
+    <li><NavLink to='/all-new-courses' className={({ isActive }) =>
+      isActive ? "active underline" : ""
+    }>All Courses</NavLink></li>
 
     <li><NavLink to='/add-course' className={({ isActive }) =>
       isActive ? "active underline" : ""
