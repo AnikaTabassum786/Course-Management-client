@@ -56,7 +56,7 @@ const AddCourse = () => {
             <Helmet>
                 <title>BidyaNiketon | Add Course</title>
             </Helmet>
-            <div className='flex items-center justify-center my-6' >
+            <div className='flex items-center justify-center mt-20' >
                 {/* Add Course <br />
             {user.email}
             {user.displayName} */}

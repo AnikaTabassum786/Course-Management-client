@@ -7,7 +7,7 @@ const CourseCard = ({course}) => {
         <div>
             <div className="card bg-base-100 w-full max-w-sm shadow-sm ">
   <figure>
-    <img className='w-full h-[200px] object-cover'
+    <img className='w-[400px] h-[200px] object-cover'
       src={imageUrl}
       alt="Shoes" />
   </figure>

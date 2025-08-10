@@ -18,7 +18,7 @@ const Instructors = () => {
             <Helmet>
                 <title>BidyaNiketon | Instructor</title>
             </Helmet>
-            <div className="my-6 text-center font-bold text-3xl italic  ">
+            <div className="mt-20 text-center font-bold text-3xl italic  ">
                 Instructors
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 place-items-center">
@@ -35,7 +35,12 @@ const Instructors = () => {
                             />
                         </div>
                         <div className="p-4">
-                            <h6 className="mb-2 text-slate-800 text-xl font-semibold">{ins.name}</h6>
+                            <div className='flex justify-between'>
+                                <p className="mb-2 text-slate-800 text-xl font-semibold">{ins.name}</p>
+                                {/* <p>Experience {ins.experience} Years</p> */}
+                                <p className="text-gray-600">Experience: <span className="font-semibold">{ins.experience} years</span></p>
+
+                            </div>
                             <p className="font-semibold leading-normal text-base">{ins.expertise}</p>
                         </div>
                         <div className="font-medium px-4 pb-4 pt-0 text-sm text-gray-700">
@@ -44,6 +49,8 @@ const Instructors = () => {
                     </div>
                 ))}
             </div>
+
+            
         </>
 
     );

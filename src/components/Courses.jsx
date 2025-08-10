@@ -16,32 +16,32 @@ import CourseCard from "./CourseCard";
 
 
 const Courses = () => {
-    const [courses,setCourses] = useState([])
+    const [courses, setCourses] = useState([])
 
-    useEffect(()=>{
+    useEffect(() => {
         fetch('https://course-management-server-mu.vercel.app/all-courses')
-        .then((res)=>res.json())
-        .then((data)=>setCourses(data))
-    },[])
+            .then((res) => res.json())
+            .then((data) => setCourses(data))
+    }, [])
     return (
         <div>
-            
+
             <div className="my-6 text-center font-bold text-3xl italic  ">
- All Courses
-</div>
+                All Courses
+            </div>
             {/* <p>{allCourses.length}</p> */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
                 {
-                courses?.map((course,index)=>{
-                    return(
-                        <CourseCard course={course} key={index}>
-                     
-                        </CourseCard>
-                    )
-                })
-            }
+                    courses?.map((course, index) => {
+                        return (
+                            <CourseCard course={course} key={index}>
+
+                            </CourseCard>
+                        )
+                    })
+                }
             </div>
-            
+
         </div>
     );
 };
