@@ -123,7 +123,7 @@ const Registration = () => {
                 <title>BidyaNiketon | Registration</title>
             </Helmet>
             <div>
-                <div className="hero-content flex-col  lg:flex-row-reverse h-[100vh]">
+                <div className="hero-content flex-col  lg:flex-row-reverse h-[100vh] mt-16">
                     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <p className='text-xl text-start pt-2 px-6 font-semibold'>Registration</p>
                         <div className="card-body">

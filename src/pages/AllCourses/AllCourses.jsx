@@ -1,34 +1,5 @@
-// import React, { useEffect, useState } from 'react';
 
-// const AllCourses = () => {
-//     const [courses, setCourses] = useState([])
-
-//     useEffect(() => {
-//         fetch('https://course-management-server-mu.vercel.app/all-new-courses')
-//             .then((res) => res.json())
-//             .then((data) => setCourses(data))
-//     }, [])
-//     console.log(courses)
-//     return (
-//         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4'>
-//             {
-//                 courses?.map((course, index) => {
-//                     return (
-//                         <div key={index}>
-//                             <p>{course.title}</p>
-//                             <img src={course.imageUrl} alt="" />
-//                             <p>{course.description}</p>
-//                             <p>Created By: {course.name}</p>
-//                         </div>
-//                     )
-//                 })
-//             }
-//         </div>
-//     );
-// };
-
-// export default AllCourses;
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 
 const AllCourses = () => {
   const [courses, setCourses] = useState([]);
@@ -41,7 +12,7 @@ const AllCourses = () => {
 
   return (
     <section className="px-4 py-12 md:px-8 lg:px-16 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">
+      <h1 className="text-3xl font-bold text-center my-20 text-gray-800">
         All Courses
       </h1>
 

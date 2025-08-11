@@ -14,7 +14,8 @@ const EditCourse = () => {
         const updatedCourse = Object.fromEntries(formData.entries())
         console.log(updatedCourse)
 
-        axios.put(`https://course-management-server-mu.vercel.app/update-course/${_id}`, updatedCourse, {
+        axios.put(`
+https://course-management-server-mu.vercel.app/update-course/${_id}`, updatedCourse, {
             headers: {
                 'Content-Type': 'application/json',
             }

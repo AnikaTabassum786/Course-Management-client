@@ -22,7 +22,8 @@ const CourseList = ({ manageCoursePromise }) => {
             console.log(result.isConfirmed)
 
             if(result.isConfirmed){
-            fetch(`https://course-management-server-mu.vercel.app/delete-course/${id}`, {
+            fetch(`
+https://course-management-server-mu.vercel.app/delete-course/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

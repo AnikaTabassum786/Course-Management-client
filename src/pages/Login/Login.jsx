@@ -103,7 +103,7 @@ const Login = () => {
      <Helmet>
                             <title>BidyaNiketon | Login</title>
                         </Helmet>
-    <div className="hero h-[90vh] ">
+    <div className="hero h-[90vh] mt-16">
       <div className=" card bg-base-100 w-full max-w-sm  shadow-2xl">
         <p className='text-xl text-start pt-2 px-6 font-semibold'>Login</p>
         <div className="flex justify-center  card-body">

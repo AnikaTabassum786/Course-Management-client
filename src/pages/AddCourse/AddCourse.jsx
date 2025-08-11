@@ -32,7 +32,8 @@ const AddCourse = () => {
 
         console.log('Submitted', title, imageUrl, duration, description)
 
-        axios.post(`https://course-management-server-mu.vercel.app/add-course?email=${user?.email}`, newCourse, {
+        axios.post(`
+https://course-management-server-mu.vercel.app/add-course?email=${user?.email}`, newCourse, {
             withCredentials: true
         })
             .then(res => {

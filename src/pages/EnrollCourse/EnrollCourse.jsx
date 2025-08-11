@@ -14,7 +14,8 @@ const MyEnrolledCourses = () => {
 
   useEffect(() => {
    
-      axios.get(`https://course-management-server-mu.vercel.app/my-enrolled-courses?email=${user.email}`,{
+      axios.get(`
+https://course-management-server-mu.vercel.app/my-enrolled-courses?email=${user.email}`,{
         withCredentials:true
       })
         .then((res) => {
@@ -32,7 +33,8 @@ const MyEnrolledCourses = () => {
    
     
 
-    axios.delete(`https://course-management-server-mu.vercel.app/unenroll-course?courseId=${courseId}&email=${user.email}`,{
+    axios.delete(`
+https://course-management-server-mu.vercel.app/unenroll-course?courseId=${courseId}&email=${user.email}`,{
       withCredentials: true
     })
       .then((res) => {
