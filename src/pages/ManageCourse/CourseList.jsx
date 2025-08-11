@@ -22,8 +22,7 @@ const CourseList = ({ manageCoursePromise }) => {
             console.log(result.isConfirmed)
 
             if(result.isConfirmed){
-            fetch(`
-https://course-management-server-mu.vercel.app/delete-course/${id}`, {
+            fetch(`https://course-management-server-mu.vercel.app/delete-course/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -48,7 +47,7 @@ https://course-management-server-mu.vercel.app/delete-course/${id}`, {
             {/* Course List
             <p>{courses.length}</p> */}
 
-            <div className="overflow-x-auto w-full rounded-box border border-base-content/5 bg-base-100 my-16">
+            <div className="overflow-x-auto w-full rounded-box border border-base-content/5 bg-base-100 my-28">
                 <table className="table w-full min-w-[640px] sm:min-w-full">
                     {/* head */}
                     <thead className='text-sm sm:text-base'>

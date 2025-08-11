@@ -14,8 +14,7 @@ const MyEnrolledCourses = () => {
 
   useEffect(() => {
    
-      axios.get(`
-https://course-management-server-mu.vercel.app/my-enrolled-courses?email=${user.email}`,{
+      axios.get(`https://course-management-server-mu.vercel.app/my-enrolled-courses?email=${user.email}`,{
         withCredentials:true
       })
         .then((res) => {
@@ -33,8 +32,7 @@ https://course-management-server-mu.vercel.app/my-enrolled-courses?email=${user.
    
     
 
-    axios.delete(`
-https://course-management-server-mu.vercel.app/unenroll-course?courseId=${courseId}&email=${user.email}`,{
+    axios.delete(`https://course-management-server-mu.vercel.app/unenroll-course?courseId=${courseId}&email=${user.email}`,{
       withCredentials: true
     })
       .then((res) => {
@@ -68,7 +66,7 @@ https://course-management-server-mu.vercel.app/unenroll-course?courseId=${course
     <Helmet>
                     <title>BidyaNiketon | Enrolled Course</title>
                 </Helmet>
-    <div className="max-w-4xl mx-auto mt-10 lg:p-0 p-4">
+    <div className="max-w-4xl mx-auto mt-20 lg:p-0 p-4">
       <h2 className="text-2xl font-bold mb-4">My Enrolled Courses</h2>
       <table className="min-w-full table-auto border border-gray-300">
         <thead className="bg-gray-100">
