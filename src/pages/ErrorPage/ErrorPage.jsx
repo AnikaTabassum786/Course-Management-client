@@ -1,30 +1,34 @@
-import React from 'react';
-import img from '../../assets/error.jpg'
 
+
+
+import React from 'react';
+import img from '../../assets/error.jpg';
 import { useNavigate } from 'react-router';
 
 const ErrorPage = () => {
-    const navigate = useNavigate()
-    const handleChange=()=>{
-        navigate('/')
-    }
-    return (
-       <>
-      
-       <div className='mt-2'>
-         <div >
-            <div className='flex justify-center items-center'>
-            <img className='mt-4 w-1/2 h-1/2' src={img} alt="Page not found" />
-            
-        </div>
-        <div className='my-4'><p className='text-2xl text-red-600 text-center'>Page Not Found</p></div>
-        </div>
+  const navigate = useNavigate();
+  const handleChange = () => {
+    navigate('/');
+  };
 
-        <div className='flex justify-center items-center hover:scale-95 duration-300'><button onClick={handleChange} className='btn text-white btn-primary'>Home Page</button></div>
-       </div>
-       
-       </>
-    );
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 dark:bg-gray-900 p-4">
+      <img
+        src={img}
+        alt="Page not found"
+        className="w-1/3 max-w-xs mb-8 rounded-md shadow-lg animate-fadeIn"
+      />
+      <p className="text-3xl font-semibold text-gray-700 dark:text-gray-300 mb-6">
+        Oops! Page Not Found
+      </p>
+      <button
+        onClick={handleChange}
+        className="btn btn-primary bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-2 rounded-lg transition-transform transform hover:scale-95 focus:outline-none"
+      >
+        Go to Home Page
+      </button>
+    </div>
+  );
 };
 
 export default ErrorPage;
