@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import { NavLink, useNavigate } from 'react-router';
 import { AuthContext } from '../context/AuthContext';
 import logo from '../assets/logo.png'
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
   const { user, signOutUser } = use(AuthContext)
@@ -23,12 +24,15 @@ const Navbar = () => {
         // setShowinfo(false);
         // alert('Log out')
         navigate('/login')
+        toast.success('Logout Successfully', {
+          position: "top-right",
+        });
       })
       .catch((error) => {
         console.log(error)
-        // toast.error(error, {
-        //   position: "top-right",
-        // });
+        toast.error(error, {
+          position: "top-right",
+        });
       })
   }
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
